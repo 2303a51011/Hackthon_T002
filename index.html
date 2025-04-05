@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Focus Timer App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Focus Timer</h1>
+    <label for="subject">Choose Subject:</label>
+    <select id="subject">
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="History">History</option>
+      <option value="Literature">Literature</option>
+      <option value="Geography">Geography</option>
+      <option value="GK">GK</option>
+    </select>
+
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <label for="examMode">📘Exam Mode:</label>
+    <input type="checkbox" id="examMode">
+
+    <div class="buttons">
+      <button onclick="startFocus()">Start Focus</button>
+      <button onclick="startBreak()">Start Break</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <p id="quote">"Stay focused, stay sharp!"</p>
+    <p id="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
